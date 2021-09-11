@@ -29,7 +29,10 @@ def p_start(t):
     '''start : expresion'''
     out_label = new_label()
     print('********** OUTPUT **********')
-    print(t[1].c3d+t[1].LV+':\n[TrueStatement]\ngoto '+out_label+'\n'+t[1].LF+':\n[FalseStatement]\n'+out_label+':')
+    if (t[1].LV != '' and t[1].LF != '' ):
+        print(t[1].c3d+t[1].LV+':\n[TrueStatement]\ngoto '+out_label+'\n'+t[1].LF+':\n[FalseStatement]\n'+out_label+':')
+    else:
+        print(t[1].c3d)
 
 def p_expresion_or(t):
     '''expresion : expresion OR expresion'''
