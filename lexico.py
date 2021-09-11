@@ -7,9 +7,13 @@ tokens = [
     'MAS',
     'MENOS',
     'DIV',
+    'DIF',
+    'IG',
+    'OR',
+    'AND',
+    'NOT',
     'DECIMAL',
-    'ENTERO',
-    'INPUT'
+    'ENTERO'
 ]
 
 #tokens
@@ -17,9 +21,13 @@ t_POR = r'\*'
 t_MAS = r'\+'
 t_MENOS = r'-'
 t_DIV = r'/'
+t_DIF = r'!='
+t_IG = r'=='
+t_OR = r'\|\|'
+t_AND = r'&&'
+t_NOT = r'!'
 t_PARIZQ = r'\('
 t_PARDER = r'\)'
-t_INPUT = r'Input:'
 t_ignore = " \t"
 
 
